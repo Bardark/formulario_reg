@@ -1,0 +1,103 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #ecf0f1;
+}
+
+footer {
+  margin: 0px auto;
+  background: #3498db;
+  width: 450px;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  border-bottom: 4px solid #2980b9;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: 1px solid #2980b9;
+  border-right: 1px solid #2980b9;
+}
+
+form {
+  background: white;
+  width: 450px;
+  height: 500px;
+  margin: 120px auto ;
+  margin-bottom: 0px;
+  border-bottom: 4px solid #3498db;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form label {
+  background: #3498db;
+  text-align: center;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  border-bottom: 4px solid #2980b9;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+form img{
+  margin: 0px 175px;
+  margin-top: 30px;
+}
+
+form div{
+  margin: 37.5px 90px;
+}
+
+form div input[type="text"],
+input[type="password"],
+input[type="email"] {
+  margin-bottom: 20px;
+  width: 270px;
+  height: 40px;
+  text-align: center;
+  border: 0.5px solid #bdc3c7;
+}
+form div input:hover{
+  border: 0.5px solid #3498db;
+}
+
+form div input[type="submit"]{
+  background: #3498db;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  cursor: pointer;
+  width: 270px;
+  height: 40px;
+  border-bottom: 4px solid #2980b9;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+form div input[type="submit"]:hover{
+  color: #3498db;
+  background: #ecf0f1;
+  border-bottom: 4px solid #bdc3c7;
+}
+
+form div input[type="submit"]:focus{
+  outline: none;
+}
+
+footer .hiper{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5 ease;
+}
+
+footer .hiper:hover{
+  color: black;
+}
