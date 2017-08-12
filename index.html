@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link rel="stylesheet" href="estilos.css" />
+		<link rel="stylesheet" href="css/estilos.css" />
 		<meta charset="utf-8">
 		<title>Ingreso a la plataforma virtual</title>
 	</head>
 	<body>
-		<form action="#">
+		<form action="enviar.php" method="post">
 			<label for="#">REGISTRO DE ACTIVIDADES</label><br>
 				<div>
-					<input type="text" name="user" placeholder="Usuario"><br>
-					<input type="password" name="userpass" placeholder="Contraseña"><br>
-					<input type="email" name="usermail" placeholder="Dirección de correo"><br>
+					<input type="text" name="encargado" placeholder="Encargado"><br>
+					<input type="checkbox" name="t1"> Trabajador 1<br>
+					<input type="checkbox" name="t2"> Trabajador 2<br>
+					<input type="checkbox" name="t3"> Trabajador 3<br>
+					<input type="checkbox" name="t4"> Trabajador 4<br><br>
+					<input type="date" name="fecha">
+					<input type="date" name="fecha_i"><br>
+					<input type="date" name="fecha_t"><br><br>
+					<input type="text" name="trabajo" placeholder="Trabajao realizado"><br>
+					<textarea rows="4" cols="40" name="trabajo" placeholder="Trabajao realizado"></textarea><br>
 					<input type="submit" name="Enviar">
 				</div>
 		</form>
+	<script src="script.js"></script>
 	</body>
 </html>

@@ -25,7 +25,7 @@ footer {
 form {
   background: white;
   width: 450px;
-  height: 500px;
+  height: auto;
   margin: 120px auto ;
   margin-bottom: 0px;
   border-bottom: 4px solid #3498db;
@@ -57,8 +57,8 @@ form div{
 }
 
 form div input[type="text"],
-input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea {
   margin-bottom: 20px;
   width: 270px;
   height: 40px;
@@ -90,6 +90,14 @@ form div input[type="submit"]:hover{
 
 form div input[type="submit"]:focus{
   outline: none;
+}
+
+form div input[type="date"]{
+  margin-bottom: 20px;
+  width: 270px;
+  height: 40px;
+  text-align: center;
+  border: 0.5px solid #bdc3c7;
 }
 
 footer .hiper{
