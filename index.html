@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<link rel="stylesheet" href="css/estilos.css" />
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ingreso a la plataforma virtual</title>
+		<link rel="stylesheet" href="css/estilos.css" />
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script Language=Javascript src="js/jquery-1.12.4.js"></script>
+		<script Language=Javascript src="js/jquery-ui.js"></script>
+		<script>
+		$( function() {
+			$( "#datepicker_i" ).datepicker();
+			$( "#datepicker_t" ).datepicker();
+		} );
+		</script>
 	</head>
 	<body>
-		<form action="enviar.php" method="post">
+
+		<form action="php/enviar.php" method="post">
 			<label for="#">REGISTRO DE ACTIVIDADES</label><br>
 				<div>
-					<input type="text" name="encargado" placeholder="Encargado"><br>
-					<input type="checkbox" name="t1"> Trabajador 1<br>
-					<input type="checkbox" name="t2"> Trabajador 2<br>
-					<input type="checkbox" name="t3"> Trabajador 3<br>
-					<input type="checkbox" name="t4"> Trabajador 4<br><br>
-					<input type="date" name="fecha">
-					<input type="date" name="fecha_i"><br>
-					<input type="date" name="fecha_t"><br><br>
-					<input type="text" name="trabajo" placeholder="Trabajao realizado"><br>
-					<textarea rows="4" cols="40" name="trabajo" placeholder="Trabajao realizado"></textarea><br>
+					<input id="encargado" type="text" name="encargado" placeholder="Encargado"><br>
+					<textarea id="e_trabajo" name="e_trabajo" placeholder="Equipo de trabajo"></textarea><br>
+					<input id="datepicker_i" type="text" name="datepicker_i" placeholder="Fecha de inicio"><br>
+					<input id="datepicker_t" type="text" name="datepicker_t" placeholder="Fecha de termino"><br>
+					<input id="t_trabajo" type="text" name="t_trabajo" placeholder="Tipo de trabajo"><br>
+					<!-- Por si lo piden
+					textarea rows="4" cols="40" name="trabajo" placeholder="Trabajao realizado"></textarea><br-->
 					<input type="submit" name="Enviar">
 				</div>
 		</form>
-	<script src="script.js"></script>
 	</body>
 </html>

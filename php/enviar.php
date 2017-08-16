@@ -8,14 +8,16 @@
 
 // Recibimos por POST los datos procedentes del formulario
 
-$nombre = $_POST["nombre"];
-$email = $_POST["email"];
-$fecha = date("d-m-Y");
+$encagado = $_POST["encargado"];
+$e_trabajo = $_POST["e_trabajo"];
+$datepicker_i = $_POST["datepicker_i"];
+$datepicker_i = $_POST["datepicker_t"];
+$t_trabajo = $_POST["t_trabajo"];
 
 // Abrimos la conexion a la base de datos
-include("conexion.php");    
+include("conexion.php");
 
-$_GRABAR_SQL = "INSERT INTO $tabla_db1 (nombre,email,fecha) VALUES ('$nombre','$email','$fecha')";
+$_GRABAR_SQL = "INSERT INTO $tabla_db1 (encargado,e_trabajo,datepicker_i,datepicker_t,t_trabajo) VALUES ('$encargado','$e_trabajo','$datepicker_i','$datepicker_t','$t_trabajo')";
 mysql_query($_GRABAR_SQL);
 
 // Cerramos la conexion a la base de datos
