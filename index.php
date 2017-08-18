@@ -17,7 +17,7 @@
 	</head>
 	<body>
 
-		<form action="php/enviar.php" method="post">
+		<form action="php/enviar.php" method="post" enctype="multipart/form-data">
 			<label for="#">REGISTRO DE ACTIVIDADES</label><br>
 				<div>
 					<input id="encargado" type="text" name="encargado" placeholder="Encargado"><br>
@@ -27,6 +27,7 @@
 					<input id="t_trabajo" type="text" name="t_trabajo" placeholder="Tipo de trabajo"><br>
 					<!-- Por si lo piden
 					textarea rows="4" cols="40" name="trabajo" placeholder="Trabajao realizado"></textarea><br-->
+					<?php include ("php/imagen.php"); ?>
 					<input type="submit" name="Enviar">
 				</div>
 		</form>
