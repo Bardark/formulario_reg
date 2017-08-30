@@ -6,6 +6,7 @@
 		<title>Ingreso a la plataforma virtual</title>
 		<link rel="stylesheet" href="css/estilos.css" />
 		<link rel="stylesheet" href="css/jquery-ui.css" />
+
 		<script Language=Javascript src="js/jquery-1.12.4.js"></script>
 		<script Language=Javascript src="js/jquery-ui.js"></script>
 		<script>
@@ -16,7 +17,10 @@
 		</script>
 	</head>
 	<body>
-		<form action="" method="post" enctype="multipart/form-data">
+		<!-- M E N U -->
+		<?php include ("php/menu.php"); ?>
+
+		<form action="php/enviar.php" method="post" enctype="multipart/form-data">
 			<label for="#">REGISTRO DE ACTIVIDADES</label><br>
 				<div>
 					<input id="encargado" type="text" name="encargado" placeholder="Encargado"><br>
@@ -26,7 +30,7 @@
 					<input id="t_trabajo" type="text" name="t_trabajo" placeholder="Tipo de trabajo"><br>
 					<!-- Por si lo piden
 					textarea rows="4" cols="40" name="trabajo" placeholder="Trabajao realizado"></textarea><br-->
-					<input id="userfile" name="userfile" type="file"><br><br>
+					<!--?php include ("php/imagen.php"); ?-->
 					<input type="submit" name="Enviar">
 				</div>
 		</form>
