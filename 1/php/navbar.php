@@ -8,7 +8,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="./registro.php">BITACORA DE ACTIVIDADES</a>
+    <a class="navbar-brand" href="./index.php">BITACORA DE ACTIVIDADES</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->

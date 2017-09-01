@@ -2,38 +2,36 @@ with(document.registro){
 	onsubmit = function(e){
 		e.preventDefault();
 		ok = true;
-		if(ok && username.value==""){
+		if(ok && cliente.value==""){
 			ok=false;
-			alert("Debe escribir un nombre de usuario");
-			username.focus();
+			alert("Debe escribir un nombre de cliente");
+			cliente.focus();
 		}
-		if(ok &&fullname.value==""){
+		if(ok &&trabajo_r.value==""){
 			ok=false;
-			alert("Debe escribir su nombre");
-			fullname.focus();
+			alert("Debe indicar el trabajo realizado");
+			trabajo_r.focus();
 		}
-		if(ok && email.value==""){
+		if(ok && datepicker_i.value==""){
 			ok=false;
-			alert("Debe escribir su email");
-			email.focus();
+			alert("Debe escribir la fecha de inicio del trabajo");
+			datepicker_i.focus();
 		}
-		if(ok && password.value==""){
+		if(ok && datepicker_t.value==""){
 			ok=false;
-			alert("Debe escribir su password");
-			password.focus();
+			alert("Debe escribir la fecha de tarmino del trabajo");
+			datepicker_t.focus();
 		}
-		if(ok && confirm_password.value==""){
+		if(ok && lider_b.value==""){
+			ok=false;
+			alert("Debe escribir la fecha de tarmino del trabajo");
+			lider_b.focus();
+		}
+		if(ok && equipo_t.value==""){
 			ok=false;
 			alert("Debe escribir su confirmacion de password");
-			confirm_password.focus();
+			equipo_t.focus();
 		}
-
-		if(ok && password.value!= confirm_password.value){
-			ok=false;
-			alert("Los passwords no coinciden");
-			confirm_password.focus();
-		}
-
 
 		if(ok){ submit(); }
 	}
