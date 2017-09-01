@@ -8,14 +8,13 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="./"><b>MYAPP</b></a>
+    <a class="navbar-brand" href="./registro.php">BITACORA DE ACTIVIDADES</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <?php if(!isset($_SESSION["user_id"])):?>
-      <li><a href="./registro.php">REGISTRO</a></li>
+    <?php if(!isset($_SESSION["user_id"])):?>
       <li><a href="./login.php">LOGIN</a></li>
     <?php else:?>
       <li><a href="./php/logout.php">SALIR</a></li>
